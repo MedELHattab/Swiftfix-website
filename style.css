@@ -81,6 +81,8 @@ section{
     letter-spacing: 0.055rem;
 }
 .card{
+    position: absolute;
+    margin-top: 5rem;
     width: 23.875rem;
     height: 7.125rem;
     flex-shrink: 0;
@@ -697,4 +699,13 @@ footer{
     font-weight: 700;
     line-height: 140.5%; /* 7.90313rem */
     letter-spacing: 0.45rem;
+}
+.about-info p{
+  color: var(--neutral-grey-6, #4F4F4F);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 158%; /* 2.37rem */
+  letter-spacing: 0.03125rem;
 }
