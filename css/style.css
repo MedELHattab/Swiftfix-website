@@ -82,14 +82,13 @@ section{
 }
 .card{
     position: absolute;
-    margin-top: 5rem;
+    margin-top: 2rem;
     width: 23.875rem;
     height: 7.125rem;
-    flex-shrink: 0;
     border-radius: 0.625rem;
     background: #FFF;
     filter: drop-shadow(0px 39px 100px rgba(25, 62, 108, 0.12));
-    margin-left: 10em;
+    margin-left: 11em;
 }
 .card h1{
     color: #33475B;
@@ -157,7 +156,7 @@ section{
     border-radius: 0.5rem;
     background: #FCFCFC;
     box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
-    padding: 5em 5em 5em 5em;
+    padding: 1.5em 1.5em 1.5em 1.5em;
 }
 .card-why h1{
     color: black;
@@ -215,6 +214,12 @@ section{
     line-height: 2rem; /* 177.778% */
     letter-spacing: 0.03125rem;
 }
+.style-element{
+    border-left: 0.5px solid #ffffff; /* 2px black solid left border */
+    border-right: 0.5px solid #ffffff; /* 2px black solid right border */
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 .stat h1{
     color: white;
     text-align: center;
@@ -260,7 +265,7 @@ section{
 }
 .card-testimonials{
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
   
 }
 
@@ -270,9 +275,8 @@ section{
     box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
     width: 33.75rem;
     height: 13.75rem;
-    
-
 } 
+
 .card-test h1{
     color: black;
     text-align: center;
@@ -285,6 +289,14 @@ section{
     padding-top: 2em ;
     
 }
+.triangle {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255); /* Red color */
+    clip-path: polygon(50% 100%, 0 0, 100% 0); /* Triangle with top vertex flipped */
+    margin-left: 15em;
+  }
+  
 .card-test p{
     color: grey;
     text-align: center;
@@ -420,11 +432,11 @@ footer{
     line-height: 1.5rem; /* 171.429% */
 }
 .socialmedia{
-    padding-top: 1em;
+    padding-top: 1.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 1em;
+    gap: 1.5em;
     color: #fff;
 }
 
@@ -459,7 +471,7 @@ footer{
 .cards-container{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 1em;
+    gap: 1.5em;
     padding-left: 5em;
     padding-right: 5em;
 }
@@ -478,7 +490,7 @@ footer{
     box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.25);
 }
 .card-box img{
-    padding: 1em 9em 2em 10em;
+    padding: 1.5em 9em 2em 10em;
 }
 .card-box h2{
     color: #000;
@@ -497,8 +509,8 @@ footer{
     font-style: normal;
     font-weight: bold;
     line-height: normal;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 .services-btn{
     border-radius: 0.5rem;
@@ -513,7 +525,7 @@ footer{
 }
 .services-btn h2{
     text-align: center;
-    ;padding-top: 1em;
+    ;padding-top: 1.5em;
 }
 /*end services*/
 
