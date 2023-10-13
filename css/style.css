@@ -178,7 +178,7 @@ section{
     letter-spacing: 0.01875rem;
 }
 .count{
-    background-image: url(images/BG.png) ;
+    background-image: url(../images/BG.svg);
     background-size: cover;
     background-position: center;
     margin-top: -2em;
