@@ -23,76 +23,112 @@
   
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="images/Logo.png" alt="logo">
+  <header>
+    <div class="logo">
+        <img src="images/Logo.svg" alt="logo">
+        <a href="index.html">SwiftFix</a>
+    </div>
+    <ul class="no-bullets">
+      <li class="nav-item">
+        <a class="nav-link" href="about.html"> About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="review.html">testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </li>
+    </ul>
+   </header>
+       <div class="contact-section">
+        <div class="information-container">
+          <div class="heading_container">
+            <h2>
+              Contact Us
+            </h2>
+          </div>
+          <div class="row">
+              <form action="database">
+                <div>
+                    <input type="text" placeholder="Last Name">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="first Name">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Phone Number" >
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Email">
+                  </div>
+                  <div>
+                    <select>
+                        <option value="0" selected disabled hidden>Choose the service type</option>
+                        <option value="1">Roof repair</option>
+                        <option value="2">fixing the car</option>
+                        <option value="3">Stairs repair</option>
+                        <option value="4">repair the Electrical tools</option>
+                        <option value="5">Painting the walls of the house</option>
+    
+                    </select>
+                </div>
+                <div>
+                  <input type="text" class="message-box" placeholder="Message">
+                </div>
+                <div class="d-flex ">
+                  <button>
+                    SEND
+                  </button>
+                </div>
+              </form>
         </div>
-        <ul class="no-bullets">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html"> About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="review.html">testimonials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Contactus.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </li>
-        </ul>
-       </nav>
-       
-
-       <footer>
+       </div>
+       <div class="map">
+        <img src="images/map.svg" alt="map">
+      </div>
+      </div>
+      <footer>
         <div class="footer-logo">
             <img src="images/Logo2.png" alt="logo">
         </div>
         <div class="footer-menu">
             <div class="menu">
-                <h1>Product</h1>
-                <h2>
-                    Overview
-                    <br>
-                    Features
-                    <br>
-                    Tutorials
-                    <br>
-                    Pricing
-                    <br>
-                    Releases
-                </h2>
+                <div class="menu-title"><a href="services.html">Product</a>
+                </div>
+                <ul>
+                    <li class="menu-item"><a href="#">Overview</a></li>
+                    <li class="menu-item"><a href="#">Features</a></li>
+                    <li class="menu-item"><a href="#">Tutorials</a></li>
+                    <li class="menu-item"><a href="#">Pricing</a></li>
+                    <li class="menu-item"><a href="#">Releases</a></li>
+                </ul>
+                 
             </div>
             <div class="menu">
-                <h1>Company</h1>
-                <h2>
-                    About
-                    <br>
-                    Services
-                    <br>
-                    Careers
-                    <br>
-                    Contact
-                    <br>
-                    Partners
-                </h2>
+                <div class="menu-title"><a href="about.html">Company</a></div>
+                <ul>
+                    <li class="menu-item"><a href="#">About</a></li>
+                    <li class="menu-item"><a href="#">Services</a></li>
+                    <li class="menu-item"><a href="#">Careers</a></li>
+                    <li class="menu-item"><a href="#">Contact</a></li>
+                    <li class="menu-item"><a href="#">Partners</a></li>
+                </ul>
             </div>
             <div class="menu">
-                <h1>Support</h1>
-                <h2>
-                    Help Center
-                    <br>
-                    Terms of service
-                    <br>
-                    Legal
-                    <br>
-                    Privacy Policy
-                    <br>
-                    Status
-                </h2>
+                <div class="menu-title"><a href="contact.html">Support</a></div>
+                <ul>
+                    <li class="menu-item"><a href="#">Help Center</a></li>
+                    <li class="menu-item"><a href="#">Terms of service</a></li>
+                    <li class="menu-item"><a href="#">Legal</a></li>
+                    <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                    <li class="menu-item"><a href="#">Status</a></li>
+                </ul>
             </div>
         </div>       
        </footer>
@@ -107,9 +143,5 @@
             <i class="fa fa-youtube-play" aria-hidden="true"></i>
         </div>
        </div>
-        <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-  <!-- End Google Map -->
-
 </body>
 </html>
