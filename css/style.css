@@ -1,5 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Playfair+Display&family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@100&display=swap');
+
+* {
+	box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
 header{
     display: flex;
     flex-direction: row;
@@ -28,6 +33,7 @@ header{
     display: flex;
     flex-direction: row;
     margin-left: 8em;
+    /* gap: 5em; */
 }
 ul li.nav-item{
     padding-right: 5em;
@@ -41,6 +47,34 @@ ul li.nav-item{
     line-height: 1.4375rem; /* 191.667% */
     letter-spacing: 0.09375rem;
 }
+.toggle{
+    cursor: pointer;
+    display: none;
+  }
+  .bars{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    transition: all .2s ease-out;
+    width: 18px;
+    margin-bottom: 5px;
+  }
+  .bars:before,.bars:after {
+  background: #999;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.bars:before {
+  top: 5px;
+}
+.bars:after {
+    top: -5px;
+  }
 section{
     display: flex;
     flex-direction: row;
@@ -116,11 +150,11 @@ section{
     filter: drop-shadow(0px 39px 100px rgba(25, 62, 108, 0.12));
     margin-left: 11em;
 }
-.card h1{
+.card h2{
     color: #33475B;
     text-align: center;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: bolder;
     line-height: 2.25rem; /* 150% */
@@ -139,6 +173,7 @@ section{
     flex-direction: row;
     justify-content: space-between;
     background: #F2F7FF;
+    width: 100%;
     
 }
 .section-consulting-left{
@@ -150,14 +185,14 @@ section{
     margin-bottom: 15em;
 }
 
-.section-consulting-left h1{
+.section-consulting-left h2{
     color: black;
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     font-style: normal;
     font-weight: bolder;
     line-height: normal;
-     letter-spacing: 0.02019rem;
+    letter-spacing: 0.02019rem;
 }
 .section-consulting-left p{
     color: grey;
@@ -184,7 +219,7 @@ section{
     box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
     padding: 1.5em 1.5em 1.5em 1.5em;
 }
-.card-section-consulting h1{
+.card-section-consulting h2{
     color: black;
     font-family: 'Playfair Display', serif;
     font-size: 1.375rem;
@@ -206,18 +241,19 @@ section{
     background-image: url(../images/BG.svg);
     background-size: cover;
     background-position: center;
-    margin-top: -2em;
+    margin-top: -2.6em;
 }
 
 .stat{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 24em;
     margin-right: 20em;
     text-align: center;
 
 }
-.sous-count h1{
+.sous-count h2{
     color: white;
     text-align: center;
     font-feature-settings: 'salt' on, 'liga' off;
@@ -229,7 +265,7 @@ section{
     letter-spacing: 0.015rem;
     padding-top: 30px;
 }
-.sous-count h2{
+.sous-count h3{
     color: white;
     text-align: center;
     font-feature-settings: 'salt' on, 'liga' off;
@@ -246,7 +282,7 @@ section{
     margin-top: 2em;
     margin-bottom: 2em;
 }
-.stat h1{
+.stat h2{
     color: white;
     text-align: center;
     font-feature-settings: 'salt' on, 'liga' off;
@@ -256,7 +292,7 @@ section{
     font-weight: bolder;
     line-height: 4rem; /* 133.333% */
 }
-.stat h2{
+.stat h3{
     color: white;
     text-align: center;
     font-feature-settings: 'salt' on, 'liga' off;
@@ -276,7 +312,7 @@ section{
     justify-content: center;
     align-items: center;
 }
-.grand-title h1{
+.grand-title h2{
     color: black;
     text-align: center;
     font-feature-settings: 'salt' on, 'liga' off;
@@ -291,8 +327,9 @@ section{
 }
 .card-testimonials{
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5em;
-  
+    justify-content: center;
 }
 
 .card-test{
@@ -303,7 +340,7 @@ section{
     height: 13.75rem;
 } 
 
-.card-test h1{
+.card-test h2{
     color: black;
     text-align: center;
     font-feature-settings: 'salt' on, 'liga' off;
@@ -345,7 +382,7 @@ section{
 }
 
 
-.client h1{
+.client h2{
     color: black;
     font-feature-settings: 'salt' on, 'liga' off;
     padding-top: 20px;
@@ -356,7 +393,7 @@ section{
     font-weight: bolder;
     line-height: 1.75rem; /* 155.556% */
 }
-.client h2{
+.client h3{
     color: black;
     font-feature-settings: 'salt' on, 'liga' off;
     padding-bottom: 20px;
@@ -370,7 +407,7 @@ section{
 .questions{
     margin-left: 10em;
 }
-.questions h1{
+.questions h2{
     color: rgb(0, 0, 0);
     font-feature-settings: 'salt' on, 'liga' off;
     font-family: 'Playfair Display', serif;
@@ -398,10 +435,12 @@ section{
     color: #ffffff;
     margin-right: 65em;
     margin-bottom: 2.5em;
+    width: 13.6875rem;
+    height: 4rem;
 }
 .call i{
     padding-top: 22px;
-    padding-left: 100px;
+    padding-left: 50px;
 }
 .call h3{
     padding-left: 15px;
@@ -409,14 +448,16 @@ section{
 footer{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 10em;
     padding-right: 10em;
     background-color: #094B72;
 }
 .footer-menu{
-    display: grid;
-    grid-template-columns: auto auto auto ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 4em;
     margin-top: 6em;
     margin-bottom: 10em;
@@ -445,12 +486,13 @@ footer{
 .copyrights-socialmedia{
     background-color: #004D7B;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 10em;
     padding-right: 10em;
 }
-.copyrights h1{
+.copyrights h2{
     color: white;
     font-family: 'Inter', sans-serif;
     font-size: 0.875rem;
@@ -459,8 +501,9 @@ footer{
     line-height: 1.5rem; /* 171.429% */
 }
 .socialmedia{
-    padding-top: 1.5em;
+    padding-top: 0.8em;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     gap: 1.5em;
@@ -500,8 +543,9 @@ footer{
 /*services section*/
 
 .cards-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5em;
     padding-left: 5em;
     padding-right: 5em;
@@ -519,6 +563,8 @@ footer{
 .card-box{
     background: #FFF;
     box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.25);
+    width: 25.5625rem;
+    height: 23.48831rem;
 }
 .card-box img{
     padding: 1.5em 9em 2em 10em;
@@ -543,20 +589,20 @@ footer{
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
+.service-button{
+    display: flex;
+    justify-content: center;
+}
 .services-btn{
     border-radius: 0.5rem;
     background: #094B72;
     width: 14.875rem;
     height: 5rem;
     color: #FFF;
-    margin-left: 40em;
     margin-bottom: 3em;
     margin-top: 3em;
-    margin-right: 40em;
-}
-.services-btn h2{
-    text-align: center;
-    ;padding-top: 1.5em;
+    font-size: 1.5em;
+    justify-items: center;
 }
 /*end services*/
 
@@ -590,7 +636,7 @@ footer{
 }
 
 .contact-section select{
-  width: 107%;
+  width: 100%;
   border: none;
   height: 50px;
   margin-bottom: 25px;
@@ -617,3 +663,9 @@ footer{
   .map{
     margin-top: 6em;
   }
+span{
+    color: red;
+}
+span i{
+    color: green;
+}

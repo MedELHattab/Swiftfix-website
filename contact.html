@@ -20,6 +20,7 @@
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/responsive.css">
   
 </head>
 <body>
@@ -56,16 +57,21 @@
           <div class="row">
               <form action="database">
                 <div>
-                    <input type="text" placeholder="Last Name">
+                  <span id="name-error"></span>
+                    <input type="text" placeholder="Last Name" id="contact-name" onkeyup="validateName()">
                   </div>
                   <div>
-                    <input type="text" placeholder="first Name">
+                    <span id="firstname-error"></span>
+                    <input type="text" placeholder="first Name" id="contact-first-name" onkeyup="validateFirstName()">
                   </div>
                   <div>
-                    <input type="text" placeholder="Phone Number" >
+                    <span id="phone-error"></span>
+                    <input type="text" placeholder="Phone Number" id="contact-phone" onkeyup="validatePhone()">
+                    
                   </div>
                   <div>
-                    <input type="email" placeholder="Email">
+                    <span id="email-error"></span>
+                    <input type="email" placeholder="Email" id="contact-email" onkeyup="validateEmail()">
                   </div>
                   <div>
                     <select>
@@ -79,12 +85,14 @@
                     </select>
                 </div>
                 <div>
-                  <input type="text" class="message-box" placeholder="Message">
+                  <span id="message-error"></span>
+                  <input type="text" class="message-box" placeholder="Message" id="contact-message" onkeyup="validateMessage()">
                 </div>
                 <div class="d-flex ">
                   <button>
                     SEND
                   </button>
+                  <span id="send-error">Please fix error</span>
                 </div>
               </form>
         </div>
@@ -134,7 +142,7 @@
        </footer>
        <div class="copyrights-socialmedia">
         <div class="copyrights">
-            <h1>© 2023 SwiftFix. All rights reserved</h1>
+            <h2>© 2023 SwiftFix. All rights reserved</h2>
         </div>
         <div class="socialmedia">
             <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -143,5 +151,6 @@
             <i class="fa fa-youtube-play" aria-hidden="true"></i>
         </div>
        </div>
+       <script src="contact.js"></script>
 </body>
 </html>
