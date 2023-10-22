@@ -10,12 +10,13 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 10em;
+    /* margin-left: 10em; */
 
 }
 .logo{
     display: flex;
     gap: 10px;
+    padding-right: 20em;
 }
 .logo a{
     text-decoration: none;
@@ -32,11 +33,12 @@ header{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    margin-left: 8em;
+    margin-left: 7em;
     /* gap: 5em; */
 }
 ul li.nav-item{
     padding-right: 5em;
+    padding-top: 10px;
 }
 .nav-link {
     text-decoration: none;
@@ -50,6 +52,7 @@ ul li.nav-item{
 .toggle{
     cursor: pointer;
     display: none;
+    padding-left: 15em;
   }
   .bars{
     background: #999;

@@ -9,6 +9,32 @@
         margin-left: 0em;
         gap: 5em;
     }
+    .logo{
+        padding-right: 15em;
+    }
+    .section-left{
+        margin-right: 5em;
+    }
+    .section-right{
+        margin-right: 10em;
+    }
+    .section-consulting{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-consulting-left {
+        width: 26.20681rem;
+        height: 18.1875rem;
+        margin-top: 6em;
+        margin-left: 25em;
+        margin-bottom: 0;
+    }
+    .section-consulting-right{
+        margin-right: 5em;
+    }
+    .map img{
+        width: 90%;
+    }
     footer{
         padding-right: 5em;
         padding-left: 5em;
@@ -20,38 +46,19 @@
         flex-wrap: wrap;
     }
 }
-
-@media screen and (max-width:  1279px) {
-    header{
-        margin-left: 0;
-    }
-    ul li.nav-item{
-        padding-right: 0;
-    }
-    .no-bullets{
-        margin-left: 0em;
-        gap: 5em;
-    }
-    .section-consulting{
-        display: flex;
-        flex-direction: column;
-    }
-    .section-consulting-left {
-        width: 26.20681rem;
-        height: 18.1875rem;
-        margin-top: 2em;
-        margin-left: 16em;
-        margin-bottom: 0; 
-    }
-    .map img{
-        width: 90%;
-    }
+@media screen and (max-width: 1180px){
+    .logo {
+    padding-right: 0em;
+}
 }
 
 @media screen and (max-width:  1024px) {
 
     header{
         margin-left: 0;
+    }
+    .logo{
+        padding-right: 0em;
     }
     ul li.nav-item{
         padding-right: 0;
@@ -162,24 +169,27 @@
   .about-info{
     padding-left: 5em;
 }
-.contact-section input{
-    width: 60%;
-}
-.contact-section select{
-    width: 60%;
-}
+
 .section-consulting-left{
-    margin-left: 5em;
+    margin-left: 15em;
 }
 .style-element {
     margin-inline: 5em;
 }
 .section-consulting-right {
-    margin-left: 1.5em;
+    margin-left: 5em;
+}
+.no-bullets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
 }
 .toggle {
     order: 1;
     display: inline-block;
+    padding-left: 40em;
   }
   .nav-item {
     width: 100%;
@@ -191,13 +201,50 @@
     display: block;
   }
 }
-@media screen and (max-width: 866px) {
-
+@media screen and (max-width: 925px){
+    .toggle {
+        padding-left: 38em;
+      }
+    
+}
+@media screen and (max-width: 878px) {
+    .contact-section {
+        padding: 0 0 5em 8em;
+    }
+    .map{
+        margin-top: 0em;
+    }
+    .contact-section input{
+    width: 60%;
+}
+.section-consulting-right {
+    margin-left: 3.5em;
+}
+.toggle {
+    order: 1;
+    display: inline-block;
+    padding-left: 26em;
+  }
+.contact-section select{
+    width: 60%;
+}
 .map img{
     width: 90%;
 }
 }
+
+@media screen and (max-width: 720px){
+    .toggle{
+        padding-left: 25em;
+    }
+    .section-consulting-left {
+        margin-left: 5em;
+    }
+}
 @media screen and (max-width:680px){
+    .toggle {
+        padding-left: 20em;
+      }
     .card-test {
         width: 15.75rem;
         height: 25.75rem;
@@ -210,6 +257,17 @@
     margin-bottom: 2em;
 }
 }
+@media screen and (max-width:590px){
+    .toggle {
+        padding-left: 10em;
+}
+}
+@media screen and (max-width:500px){
+    .section-consulting-left {
+        margin-left: 3em;
+    }
+}
+
 @media screen and (max-width:450px){
     .section-consulting-right {
         grid-template-columns: auto;
@@ -226,5 +284,14 @@
 
 .section-consulting-right {
     margin-left: 5em;
+}
+.contact-section {
+    padding: 0 0 5em 5em;
+}
+.map{
+    margin-top: 0em;
+}
+.toggle {
+    padding-left: 2em;
 }
 }
