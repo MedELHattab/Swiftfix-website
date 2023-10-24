@@ -78,6 +78,37 @@ ul li.nav-item{
 .bars:after {
     top: -5px;
   }
+.search-container{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.search-container i{
+    padding-top: 3px;
+}
+  .hidden {
+    display: none;
+  }
+.servise-item{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.fa-sort-desc:before{
+    color: #000;
+}
+.dropdown-menu {
+    list-style-type: none;
+    display:flex ;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 0em;
+    padding-top: 20px;
+  }
+.dropdown-menu a{
+    text-decoration: none;
+    color: #094B72;
+}
 section{
     display: flex;
     flex-direction: row;

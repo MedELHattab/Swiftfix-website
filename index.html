@@ -26,15 +26,26 @@
 <body>
     <header>
         <ul class="no-bullets">
+            <li>
             <div class="logo">
             <img src="images/Logo.svg" alt="logo">
             <a href="index.html">SwiftFix</a>
+        </li>
         </div>
           <li class="nav-item">
             <a class="nav-link" href="about.html"> About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+            <div class="servise-item">
+                <a class="nav-link" >Services</a>
+                <div class="arrow"><i class="fa fa-sort-desc" aria-hidden="true"></i></div>
+            </div>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html">Electrical</a></li>
+                <li><a class="dropdown-item" href="services.html">Maintenance</a></li>
+                <li><a class="dropdown-item" href="services.html">Plumbing</a></li>
+              </ul>
+            </li>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="review.html">testimonials</a>
@@ -43,7 +54,10 @@
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <i class="fa fa-search" aria-hidden="true"></i>
+            <div class="search-container">
+            <input type="text" id="searchInput" class="hidden">
+            <i id="searchIcon" class="fa fa-search" aria-hidden="true"></i>
+            </div>
           </li>
           <li class="toggle"><span class="bars"></span></li>
         </ul>
@@ -265,5 +279,6 @@
         </div>
        </div>
        <script src="toggle.js"></script>
+       <script src="searchInput.js"></script>
 </body>
 </html>
