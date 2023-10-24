@@ -200,6 +200,9 @@
   .nav-item.active {
     display: block;
   }
+  .dropdown-menu {
+    position: static;
+  }
 }
 @media screen and (max-width: 925px){
     .toggle {

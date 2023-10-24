@@ -26,16 +26,30 @@
 <body>
   <header>
     <ul class="no-bullets">
+        <li>
         <div class="logo">
         <img src="images/Logo.svg" alt="logo">
         <a href="index.html">SwiftFix</a>
-    </div>
-      <li class="nav-item">
+        </div>
+        </li>
+     <li class="nav-item">
         <a class="nav-link" href="about.html"> About</a>
       </li>
+     
       <li class="nav-item">
-        <a class="nav-link" href="services.html">Services</a>
-      </li>
+        <div class="service-icon">
+            <a class="nav-link " href="#" role="button">
+                Services
+            </a>
+            <div class="arrow"><i class="fa fa-sort-desc" aria-hidden="true"></i></div>
+        </div>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="services.html">Electrical</a></li>
+            <li><a class="dropdown-item" href="services.html">Maintenance</a></li>
+            <li><a class="dropdown-item" href="services.html">Plumbing</a></li>
+        </ul>
+    </li>
+              
       <li class="nav-item">
         <a class="nav-link" href="review.html">testimonials</a>
       </li>
@@ -44,8 +58,9 @@
       </li>
       <li class="nav-item">
         <div class="search-container">
-          <input type="text" id="searchInput" class="hidden">
-          <i id="searchIcon" class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" id="searchInput" class="hidden">
+        <i id="searchIcon" class="fa fa-search" aria-hidden="true"></i>
+        </div>
       </li>
       <li class="toggle"><span class="bars"></span></li>
     </ul>
@@ -74,9 +89,16 @@
           </div>
         </div>
         <div class="service-button">
-        <button class="services-btn">
-          Learn More
-        </button>
+          <button class="services-btn" id="openModalBtn">
+              Learn More
+          </button>
+      </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+              <span class="close" id="closeModalBtn">&times;</span>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quibusdam quisquam, facere temporibus dolorum culpa modi illum laboriosam natus soluta ea ipsa laborum similique autem aliquam officia nemo neque magnam.</p>
+          </div>
+      </div>
        </div>
        </div>
 
@@ -133,7 +155,9 @@
             <i class="fa fa-youtube-play" aria-hidden="true"></i>
         </div>
        </div>
-       <script src="toggle.js"></script>
-       <script src="searchInput.js"></script>
+       <script src="javaScript/toggle.js"></script>
+       <script src="javaScript/searchInput.js"></script>
+       <script src="javaScript/dropdown.js"></script>
+       <script src="javaScript/modal.js"></script>
 </body>
 </html>
