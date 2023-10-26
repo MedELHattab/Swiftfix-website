@@ -121,7 +121,7 @@
     .card-testimonials{
         display: flex;
         gap: 1.5em;
-        flex-direction: column;
+        /* flex-direction: column; */
       
     }
     .questions p {

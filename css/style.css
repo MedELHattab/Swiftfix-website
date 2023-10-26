@@ -347,6 +347,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 10%;
 }
 .grand-title h2{
     color: black;
@@ -363,9 +364,12 @@ section{
 }
 .card-testimonials{
     display: flex;
-    flex-wrap: wrap;
     gap: 1.5em;
-    justify-content: center;
+    /* justify-content: center; */
+}
+.card_containers{
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .card-test{

@@ -1,9 +1,9 @@
-const testimonialsContainer = document.querySelector('.testimonial-container');
-const cardTestimonials = document.querySelector('.card-testimonials');
+const testimonialsContainer = document.querySelector('.card-testimonials');
+const cardTestimonials = document.querySelectorAll('.testimonial-left');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 let currentSlide = 0;
-const cardWidth = cardTestimonials.offsetWidth;
+const cardWidth = cardTestimonials[0].clientWidth;
 
 function prevSlide() {
     if (currentSlide > 0) {
@@ -13,14 +13,17 @@ function prevSlide() {
 }
 
 function nextSlide() {
-    if (currentSlide < cardTestimonials.children.length - 1) {
+    if (currentSlide < cardTestimonials.length - 1) {
         currentSlide++;
         moveSlide();
     }
 }
 function moveSlide() {
+    if(currentSlide === cardTestimonials.length){
+        currentSlide = 0;
+    }
     const translateX = -currentSlide * cardWidth;
-    cardTestimonials.style.transform = `translateX(${translateX}px)`;
+    testimonialsContainer.style.transform = `translateX(${translateX}px)`;
 }
 prevBtn.addEventListener('click', prevSlide);
 nextBtn.addEventListener('click', nextSlide);
