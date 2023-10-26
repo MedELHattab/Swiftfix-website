@@ -73,7 +73,7 @@
             </h2>
           </div>
           <div class="row">
-              <form action="database">
+              <form action="#">
                 <div>
                   <span id="name-error"></span>
                     <input type="text" placeholder="Last Name" id="contact-name" onkeyup="validateName()">
@@ -107,10 +107,10 @@
                   <input type="text" class="message-box" placeholder="Message" id="contact-message" onkeyup="validateMessage()">
                 </div>
                 <div class="d-flex ">
-                  <button>
+                  <button onclick="return validateForm()">
                     SEND
                   </button>
-                  <span id="send-error">Please fix error</span>
+                  <span id="send-error"></span>
                 </div>
               </form>
         </div>

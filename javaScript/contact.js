@@ -75,4 +75,18 @@ function validateMessage(){
         messageError.innerHTML ='Message is required'
         return false;
     }
+    if(Message.trim().length  > 50) {
+        messageError.innerHTML ='Message should not pass 50 digits'
+        return false;
+    }
+    messageError.innerHTML = '<i class="fa fa-check-circle" aria-hidden="true"></i>'
+    return true;
+}
+function validateForm(){
+    if(!validateName() || !validateFirstName() || !validateMessage() || !validatePhone() || validateEmail()){
+        sendError.innerHTML = 'Please fix error to send the form' 
+        return false;
+    }
+    sendError.innerHTML= '';
+    return true ;
 }
