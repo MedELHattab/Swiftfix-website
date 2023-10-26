@@ -1,4 +1,9 @@
-@media screen and (max-width:  1280px) {
+@media screen and (max-width:1380px) {
+    .no-bullets{
+        margin-left: 0em;
+    }
+}
+@media screen and (max-width:  1300px) {
     header{
         margin-left: 0;
     }
@@ -51,7 +56,12 @@
     padding-right: 10em;
 }
 }
-
+@media screen and (max-width: 1110px) {
+    .no-bullets{
+        margin-left: 0em;
+        gap: 4em;
+    }
+}
 @media screen and (max-width:  1024px) {
 
     header{
@@ -65,7 +75,7 @@
     }
     .no-bullets{
         margin-left: 0em;
-        gap: 5em;
+        /* gap: 4em; */
     }
     section{
         margin-left: 10em;
